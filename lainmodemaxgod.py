@@ -24,7 +24,7 @@
 ║                         Version 1.0.0 - "Riddler"                          ║
 ║                                                                            ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
-
+                            DONATE-USDT(TON) UQBvD6icDLR6bz399a4IXukFEaujMDdlPFMMdmXo1jAdRP1I
                             ⭐ DON'T FORGET TO STAR! ⭐
 """
 
