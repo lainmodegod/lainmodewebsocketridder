@@ -122,3 +122,5 @@ websocket-client>=1.6.0
 pyyaml>=6.0
 colorama>=0.4.6
 tqdm>=4.65.0
+
+DONATE-USDT(TON) UQBvD6icDLR6bz399a4IXukFEaujMDdlPFMMdmXo1jAdRP1I
