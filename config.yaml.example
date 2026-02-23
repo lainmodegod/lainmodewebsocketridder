@@ -1,0 +1,68 @@
+# LainMode WebSocket Riddler - Example Configuration
+# Created by lainmode 💜
+
+# Target WebSocket URL
+url: "wss://api.target.com/websocket"
+
+# Authentication token
+token: "YOUR_TOKEN_HERE"
+
+# Proxy (optional)
+# proxy: "http://127.0.0.1:8080"
+
+# HTTP headers
+headers:
+  Origin: "https://target.com"
+  Accept-Language: "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+
+# Targets for testing
+targets:
+  chats: [1001, 1002, 1003, 1004, 1005]
+  users: [2001, 2002, 2003, 2004, 2005]
+  messages: [3001, 3002, 3003]
+  custom:
+    groups: [4001, 4002, 4003]
+
+# Initialization message (use {token} placeholder)
+init_message:
+  ver: 11
+  cmd: 0
+  opcode: 19
+  payload:
+    interactive: true
+    token: "{token}"
+    userAgent: "Mozilla/5.0..."
+
+# Test messages
+test_messages:
+  - opcode: 79
+    payload:
+      chatIds: ["{target}"]
+    name: "chat_history"
+    type: "chat"
+  
+  - opcode: 48
+    payload:
+      userId: "{target}"
+    name: "user_profile"
+    type: "user"
+  
+  - opcode: 50
+    payload:
+      messageId: "{target}"
+    name: "message_details"
+    type: "message"
+
+# Settings
+delay_between_tests: 1.0
+delay_after_init: 0.5
+max_workers: 3
+save_responses: true
+verbose: false
+output_dir: "results"
+
+# User agents for rotation
+user_agents:
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+  - "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0"
+  - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
