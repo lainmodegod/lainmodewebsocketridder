@@ -7,7 +7,7 @@
 
 > 🕷️ **Universal WebSocket Security Testing Tool** - потому что безопасность должна быть доступной
 
-<img src="https://raw.githubusercontent.com/lainmodemaxgod/lainmodewebsocketridder/main/logo.png" width="200" alt="Logo">
+<img src="https://raw.githubusercontent.com/lainmodegod/lainmodewebsocketridder/main/logo.png" width="200" alt="Logo">
 
 ## ✨ Возможности
 
