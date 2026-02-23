@@ -32,7 +32,7 @@ WEBSOCKET_URL = "wss://ws-api.oneme.ru/websocket"
 PROXY = ""  # Оставьте пустым если без прокси, или укажите "http://127.0.0.1:8080" для Burp
 
 # ТВОЙ ТОКЕН (скопирован из успешного запроса в браузере)
-TOKEN = "An_Sx6HQ9HDiMesKZqcf-w2clwSXu7KEUY_ZfgN5aH-NWi8arFKe8BimCnAhma7nqmOKwumWq4g6gPwotQGfjZXt3wyfzY_gsQT1icbpsaVyQXOHYKuB9mwJ6Od1s6RCHgTrFVpsn707nUs9uO9e0h6ExTocdmFO9jZoJ1qj8l8BeJbZ_HAnHOIMNChZl6Nm331MQ1mGluorJQgIWorx7qmgPJwu9vAV_BNvQ9raiqzG4r-lkEN3oZxd_n6yCtR6n8dQ_icRDE7xbsgO_dDu4PAvY10hAEsu_eeTfDA8WNK27eeFU3qdWAX226Jj9fHWwHKCh7848isa0zflJFQkUmqfgeUveLPY-gMq_njjfIwcEJapBnTFYBuTn-BLPETWv3Sv3djgnH-vgCn2WYwuh6zM4MIvBY7h_kDFBbmUxhW1dRpCTPgXlU6PSYwCj6wD_OM0iU4YUEXkXoTbxuxHuXGev0-BvglgQY_zeFTeUSFOIMQ6YJ-wO9EqjdUfpFTvS18tpo22Dc7ixaex5GVxZB42SPCAh1EN5S3VDSpgXNwgqBHo5sv9e5e4HcS8k2db9FOAqYep6cg_MlTwuiXfA6bFlrytM1y9FQIc8zvo-desO544Q3-LMOvC1Ca-ksMeTGuRccNFlXBUz6scEMd9uKyJ7JxUbqasHSoWhiz-LVJWFtmPfXms5qEgv67ogDP-TlI4G3Y"
+TOKEN = "ваш токен"
 
 # ID для тестирования (из твоего ответа сервера)
 TARGET_CHAT_IDS = [
@@ -105,16 +105,16 @@ class Colors:
 def print_banner():
     """Выводит красивый баннер при запуске"""
     banner = f"""
-{Colors.CYAN}╔══════════════════════════════════════════════════════════════════╗
-║                                                                      ║
+{Colors.CYAN}╔════════════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                                     ║
 ║     {Colors.BOLD}██╗      █████╗ ██╗███╗   ██╗███╗   ███╗ ██████╗ ██████╗ ███████╗{Colors.CYAN}     ║
 ║     {Colors.BOLD}██║     ██╔══██╗██║████╗  ██║████╗ ████║██╔═══██╗██╔══██╗██╔════╝{Colors.CYAN}     ║
 ║     {Colors.BOLD}██║     ███████║██║██╔██╗ ██║██╔████╔██║██║   ██║██║  ██║█████╗  {Colors.CYAN}     ║
 ║     {Colors.BOLD}██║     ██╔══██║██║██║╚██╗██║██║╚██╔╝██║██║   ██║██║  ██║██╔══╝  {Colors.CYAN}     ║
 ║     {Colors.BOLD}███████╗██║  ██║██║██║ ╚████║██║ ╚═╝ ██║╚██████╔╝██████╔╝███████╗{Colors.CYAN}     ║
 ║     {Colors.BOLD}╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝{Colors.CYAN}     ║
-║                                                                      ║
-║              {Colors.YELLOW}WebSocket Auto-Tester for MAX{Colors.CYAN}                             ║
+║                                                                                                     ║
+║              {Colors.YELLOW}WebSocket Auto-Tester for MAX{Colors.CYAN}                              ║
 ║                 {Colors.BOLD}v2.0 - IDOR Hunter{Colors.CYAN}                                        ║
 ╚══════════════════════════════════════════════════════════════════════╝{Colors.END}
 """
