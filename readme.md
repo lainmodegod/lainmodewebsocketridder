@@ -4,3 +4,4 @@ git clone https://github.com/mark36411/lainmodemaxgod.git
 pip install websocket-client
 готово пользуйтесь
 lainmode
+IDOR к слову не сработало с этим скриптом но вы можете его спокойно переделывать под ваши таргеты
